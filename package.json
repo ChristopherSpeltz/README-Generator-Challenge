@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator-challenge",
+  "version": "1.0.0",
+  "description": "Application created to generate a README.md file from user's input using the Inquirer package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristopherSpeltz/README-Generator-Challenge.git"
+  },
+  "author": "Christopher Speltz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristopherSpeltz/README-Generator-Challenge/issues"
+  },
+  "homepage": "https://github.com/ChristopherSpeltz/README-Generator-Challenge#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
