@@ -1,7 +1,8 @@
 // packages needed for this application
+const { clear } = require("console");
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // const Choices = require('inquirer/lib/objects/choices');
 
@@ -164,3 +165,5 @@ const writeToFile = (fileName, data) => {
 // Function call to initialize app
 // init();
 promptUser()
+
+console.log(generateMarkdown)
