@@ -1,10 +1,7 @@
 // packages needed for this application
-const { clear } = require("console");
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
-
-// const Choices = require('inquirer/lib/objects/choices');
 
 // array of questions for user input
 const promptUser = () => {
@@ -84,7 +81,7 @@ const promptUser = () => {
       default: false,
     },
     {
-      type: "checkbox",
+      type: "list",
       name: "license",
       message: "What license does your project use?",
       choices: [
@@ -145,7 +142,7 @@ const promptUser = () => {
 
 const writeToFile = (fileName, data) => {
   return new Promise((resolve, reject) => {
-    fs.writeToFile("./dist/README.md", fileName, data, (err) => {
+    fs.writeFile("README.md", data, (err) => {
       if (err) {
         reject(err);
         return;
@@ -164,6 +161,11 @@ const writeToFile = (fileName, data) => {
 
 // Function call to initialize app
 // init();
-promptUser()
+promptUser().then(answers => {
+  // console.log(answers)
+  let structuredResponse = generateMarkdown(answers)
+  // console.log(structuredResponse)
+  writeToFile("README.md", structuredResponse)
+})
 
-console.log(generateMarkdown)
+// console.log(generateMarkdown)
