@@ -162,7 +162,7 @@ const writeToFile = (fileName, data) => {
 // Function call to initialize app
 // init();
 promptUser().then(answers => {
-  // console.log(answers)
+  console.log(answers)
   let structuredResponse = generateMarkdown(answers)
   // console.log(structuredResponse)
   writeToFile("README.md", structuredResponse)
