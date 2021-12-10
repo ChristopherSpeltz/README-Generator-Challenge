@@ -140,7 +140,7 @@ const promptUser = () => {
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 
-const writeToFile = (fileName, data) => {
+const writeToFile = (filename, data) => {
   return new Promise((resolve, reject) => {
     fs.writeFile("README.md", data, (err) => {
       if (err) {
@@ -167,5 +167,3 @@ promptUser().then(answers => {
   // console.log(structuredResponse)
   writeToFile("README.md", structuredResponse)
 })
-
-// console.log(generateMarkdown)
