@@ -1,6 +1,5 @@
 # Professional README Generator
 
-## [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
 ## Description
 Application created to generate README files based off of user input.
@@ -8,8 +7,7 @@ Application created to generate README files based off of user input.
 ## Table of Contents
 - [Link](#link)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Tests](#tests)
+- [ScreenShots](#screenshots)
 - [Contributors](#contributors)
 - [Questions](#questions)
 - [License](#license)
@@ -22,13 +20,8 @@ https://github.com/ChristopherSpeltz/README-Generator-Challenge.git
 run "node index" from command line
 
 
-## Usage
-Details can be found on README file
-
-
-## Tests
-Details can be found on README file
-
+## ScreenShots
+![Application Usage](https://user-images.githubusercontent.com/37876358/145522460-736610e5-dedf-42e9-b7ee-b7c5b02df204.jpg)
 
 ## Contributors
 Christopher Speltz
@@ -38,4 +31,4 @@ Please feel free to email any questions to chrisspeltz@msn.com. You can also vis
 
 ## License
 
-Boost Software License 1.0
+No license in use
