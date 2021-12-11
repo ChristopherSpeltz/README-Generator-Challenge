@@ -138,8 +138,6 @@ const promptUser = () => {
 };
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
 const writeToFile = (filename, data) => {
   return new Promise((resolve, reject) => {
     fs.writeFile("README.md", data, (err) => {
@@ -156,11 +154,9 @@ const writeToFile = (filename, data) => {
   });
 };
 
-// TODO: Create a function to initialize app
-// function init() {}
+
 
 // Function call to initialize app
-// init();
 promptUser().then(answers => {
   console.log(answers)
   let structuredResponse = generateMarkdown(answers)
